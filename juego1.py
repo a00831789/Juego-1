@@ -48,6 +48,7 @@ def tap(x, y):
 def store(key, value):
     "Store value in state at key."
     state[key] = value
+    
 
 state = {'start': None, 'shape': line}
 setup(420, 420, 370, 0)
