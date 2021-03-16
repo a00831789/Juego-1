@@ -35,7 +35,18 @@ def circle_(start, end):
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    
+    for count in range(2):
+        forward(end.x-start.x)
+        right(90)
+        forward(start.y-end.y)
+        right(90)
+
+    end_fill()
 
 def triangle(start, end):
     "Draw triangle from start to end."
@@ -82,5 +93,5 @@ onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle_), 'c')
 onkey(lambda: store('shape', rectangle), 'r')
 onkey(lambda: store('shape', triangle), 't')
-onkey(lambda: color('magenta'), 'M')
+onkey(lambda: color('magenta'), 'm')
 done()
