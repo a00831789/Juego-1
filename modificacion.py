@@ -17,9 +17,6 @@ def circle_(start, end):
     down()
     begin_fill()
     
-    x_c=int(start.x)
-    y_c=int(start.y)
-    
     for count in range(1):
         circle(start.x-end.x)
 
