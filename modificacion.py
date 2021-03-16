@@ -9,3 +9,5 @@ def triangle(start, end):
         forward(end.x - start.x)
         left(120)
     end_fill()
+
+onkey(lambda: color('magenta'), 'M')
