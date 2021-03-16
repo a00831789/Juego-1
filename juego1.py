@@ -36,7 +36,7 @@ def triangle(start, end):
     down()
     begin_fill()
     
-    for count in range(4):
+    for count in range(3):
         forward(end.x - start.x)
         left(120)
     end_fill()
